@@ -1,14 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 /*
-main - Print the last digit of a random number
-Return: 0
+*main - Print the last digit of a random number
+*Return: 0
 */
 int main (void)
 {
 	int n;
+
 	srand(time(0));
-	n= rand() - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
+
 	int last_num;
 	last_num=n%10;
 	if(last_num>5)
