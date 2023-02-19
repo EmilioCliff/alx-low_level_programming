@@ -21,18 +21,17 @@ int main(void)
 {
 	int i, m;
 
-	i=97;
-	m=65;
-	for(i=97; i<=122; i++)
+	i = 97;
+	m = 65;
+	for (i = 97; i <= 122; i++)
 {
 	putchar("%c", i);
 }
-		
-	for(m=65; i<=90; m++)
+	for (m = 65; i <= 90; m++)
 {
 	putchar("%c", m);
 }
-	return(0);
+	return (0);
 }
 	/*prints a - z*/
 	while (ch <= 'z')
