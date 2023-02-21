@@ -4,7 +4,7 @@
  * @int - the interger to be calculated
  * Return: abs
  */
-int _abs(int)
+int _abs(int abs)
 {
 	int abs;
 
