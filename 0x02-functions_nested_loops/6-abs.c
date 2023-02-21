@@ -7,8 +7,15 @@
 int _abs(int)
 {
 	int abs;
+
 	if (abs < 0)
+	{
 		abs = abs * (-1);
+	}
+	else 
+	{
+		abs = abs;
+	}
 	return (abs);
 }
 
