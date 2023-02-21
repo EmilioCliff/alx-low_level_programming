@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - find if a c is a number then goes to find if it is uppercase or lowercase
+ * _isalpha - find if a character is a letter
  * @c: input data
  * Return: 1 if c is a letter, lowercase or uppercase otherwise 0
  */
