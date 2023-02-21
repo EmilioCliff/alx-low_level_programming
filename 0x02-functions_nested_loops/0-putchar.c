@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	char string = "_putchar";
+	char c = "_putchar";
 
-	_putchar(string);
+	_putchar(c);
 	return (0);
 }
