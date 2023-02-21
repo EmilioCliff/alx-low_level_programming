@@ -6,11 +6,9 @@
  */
 int _abs(int abs)
 {
-	int abs;
-
 	if (abs < 0)
 	{
-		abs = abs * (-1);
+		abs = (abs * (-1));
 	}
 	else 
 	{
