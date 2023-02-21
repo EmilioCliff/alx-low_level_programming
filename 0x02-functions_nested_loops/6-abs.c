@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - find the absolute value of a number
- * @int - the interger to be calculated
+ * @abs: the interger to be calculated
  * Return: abs
  */
 int _abs(int abs)
@@ -10,7 +10,7 @@ int _abs(int abs)
 	{
 		abs = (abs * (-1));
 	}
-	else 
+	else
 	{
 		abs = abs;
 	}
