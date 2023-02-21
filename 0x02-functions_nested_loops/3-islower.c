@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 /**
  * _islower - searches for lowercase in a character
  * @c: takes the character to be searched
