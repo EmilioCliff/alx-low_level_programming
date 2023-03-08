@@ -6,11 +6,12 @@
  * @c: character to be searched in string
  *
  * Return: return s if charachter is located
- * 			return NULL if character is not found
+ *			return NULL if character is not found
  */
 char *_strchr(char *s, char c)
 {
 	int i = 0;
+
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
@@ -18,7 +19,7 @@ char *_strchr(char *s, char c)
 			return (s);
 		break;
 		}
-		else 
+		else
 			i++;
 	}
 	return (NULL);
