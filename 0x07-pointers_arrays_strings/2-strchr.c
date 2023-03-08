@@ -10,18 +10,22 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-	char **ch;
+	int i;
+	int b = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			ch = s;
-		break;
+			while (s[i] != '\0')
+			{
+			s[b] = s[i];
+			}
+			break;
 		}
-	if (ch == s)
-		return (ch);
+	}
+	if (s[b] == s[i])
+		return (s);
 	else
 		return (NULL);
 }
