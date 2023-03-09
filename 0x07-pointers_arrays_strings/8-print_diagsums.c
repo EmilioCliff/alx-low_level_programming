@@ -9,21 +9,19 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int c, b;
+	int sum, b, c;
 
-	for (c = 0; c < size; c++)
+	for (b = 0; b < size; b++)
 	{
-		flag = 0;
-		for (b = 0; b < size; b++)
+		for (c = 0; c < size; c++)
 		{
 			if (b == c)
 			{
-				flag = 1;
-				a += a[c][b];
-				break;
+			sum = sum + a[b][c];
+			printf("%d ", sum);
 			}
-			if (flag == 1)
-				break;
 		}
 	}
 }
+
+
