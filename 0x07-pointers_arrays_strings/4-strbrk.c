@@ -10,32 +10,21 @@
  * Return: return NULL if no byte is found
  *		return pointer to the byte if match is found
  */
-char *_strbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int a, b, c, d;
+	int i, j;
 
-	a = 0;
-	b = 0;
-	d = 0;
-	while (s[d] != '\0')
-		d++;
-	while (s[a] != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-		c = 0;
-		while (accept[c] != '\0')
+		j = 0;
+		while (accept[j] != '\0')
 		{
-			if (s[a] != accept[c])
-				c++;
-			else
-				b = 1;
+			if (s[i] == accept[j])
+				return (s + i);
+			j++;
 		}
-		if (b == 1)
-			break;
-	else
-			a++;
+		i++;
 	}
-	if (b == 0)
-		return (NULL);
-	else
-		return (s);
+	return ('\0');
 }
