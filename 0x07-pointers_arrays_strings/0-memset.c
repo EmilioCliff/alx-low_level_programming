@@ -2,9 +2,9 @@
 /**
  * _memset - function that fills memory with a constant byte
  *
- * @s: string to be printed on
- * @b: the character to be printed
- * @n: number of bytes of the memory
+ * @s: pointer to the memory to fill
+ * @b: the character to fill s
+ * @n: number of bytes to be filled
  *
  * Return: s
  */
