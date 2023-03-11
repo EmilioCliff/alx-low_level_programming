@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_putchar.c"
 /**
  * main - prints the name it's called with
  * @argc: Number of arguments passed to program
