@@ -1,4 +1,4 @@
-#include "cliff.h"
+#include "main.h"
 
 /**
  * main - Entry check alx code
