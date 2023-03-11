@@ -6,13 +6,7 @@
  * Return: on succes 0
  * on error -1
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s", argv[i]);
-	}
-	printf("\n");
+		printf("%s\n", argv[0]);
 }
