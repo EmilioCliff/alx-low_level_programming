@@ -3,16 +3,18 @@
  * main - prints the name it's called with
  * @argc: Number of arguments passed to program
  * @argv: Array of strings passed to program
- * Return : on succes 0
+ * Return: on succes 0
  * on error -1
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
-	int i;
-	
-	for (i = 0; i <= argc; i++)
+	char *ch = argv[0];
+	int i = 0;
+
+	while (ch[i] != '\0')
 	{
-		_putchar(*argv[i])
+		_putchar(ch[i]);
+		i++;
 	}
 	return (0);
 }
