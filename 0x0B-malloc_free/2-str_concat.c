@@ -10,12 +10,20 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int l1, l2, i;
+	int l1, l2, i, totlen;
 	char *ptr;
 
 	l1 = strlen(s1);
 	l2 = strlen(s2);
-	ptr = malloc(sizeof(char) * (l1 + l2 + 1));
+	totlen = l1 + l2 + 1;
+	if (totlen == NULL)
+	{
+		ptr = malloc(sizeof(char))
+			ptr[0] = '\0';
+		return (ptr);
+	}
+
+	ptr = malloc(sizeof(char) * totlen);
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; i < l2; i++)
