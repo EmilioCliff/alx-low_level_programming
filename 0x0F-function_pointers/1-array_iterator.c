@@ -1,20 +1,21 @@
-#ifndef FUNCTION_POINTERS_H
-#define FUNCTION_POINTERS_H
-
-void print_name(char *name, void (*f)(char *));
-void array_iterator(int *array, size_t size, void (*action)(int));
-int int_index(int *array, int size, int (*cmp)(int));
+#include <stddef.h>
 
 /**
- * enum bool - typedef function for bool
- * @TRUE: 1
- * @FALSE: 0
+ * array_iterator - a function that executes a given function
+ *                  as a parameter on each element of an array
+ *
+ * @array: array to iterate
+ * @size: size of array
+ * @action: pointer to function to call
+ *
+ * Return: empty if @array and @action is NULL
 */
-typedef enum bool
+
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	TRUE = 1,
-	FALSE = 0
-} bool;
+	unsigned int index;
 
-#endif /* FUNCTION_POINTERS_H */
-
+	if (array != NULL && size > 0 && action != NULL)
+		for (index = 0; index < size; index++)
+			action(array[index]);
+}
