@@ -6,11 +6,11 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	unsigned int count = 0;
+	size_t int count = 0;
 	const listint_t *ptr;
 
 	if (h == NULL)
-		printf("Linked list is empty");
+		return (NULL);
 	ptr = h;
 	while (ptr != NULL)
 	{
