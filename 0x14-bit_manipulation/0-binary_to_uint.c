@@ -7,7 +7,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned digit = 0;
+	unsigned int digit = 0;
 	int power = 1;
 	int length = 0;
 
@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 	length--;
 	while (length >= 0)
 	{
-		digit = digit + (b[length] - '0')*power;
+		digit = digit + (b[length] - '0') * power;
 		power = power * 2;
 		length--;
 	}
